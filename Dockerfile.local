@@ -1,0 +1,12 @@
+FROM node:14-alpine
+
+WORKDIR /app
+COPY package.json .
+RUN yarn
+# RUN npm install
+RUN yarn install
+COPY . .
+ENV REACT_APP_ENV=env
+ENV REACT_APP_BASE_URL=baseUrl 
+EXPOSE 3000
+CMD ["npm","start"]

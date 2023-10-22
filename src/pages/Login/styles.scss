@@ -1,0 +1,36 @@
+@import '../../assets/css/main';
+#login {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .form-container {
+    justify-content: center;
+  }
+  .login-component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    background: rgba($color: #fff, $alpha: 0.8);
+  }
+  .btn-custom {
+    background: $color-primary;
+    border: 1px solid white;
+    color: white;
+  }
+  .error-message {
+    color: red;
+    font-size: 12px;
+  }
+  .input-group-password {
+    background-color: transparent;
+    border-left-color: transparent;
+  }
+  .input-password {
+    border-right-color: transparent;
+  }
+}

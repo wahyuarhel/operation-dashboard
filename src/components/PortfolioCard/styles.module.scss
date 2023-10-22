@@ -1,0 +1,22 @@
+@import 'assets/css/_main.scss';
+
+.portfolio_card {
+  padding: 20px 30px;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  @include screen-xxl {
+    margin-top: 55px;
+  }
+  .label {
+    font-size: 9px;
+    font-weight: 400;
+    color: #232323;
+  }
+  .value {
+    font-family: 'Mulish';
+    font-size: 33px;
+    font-weight: 900;
+    color: #232323;
+  }
+}

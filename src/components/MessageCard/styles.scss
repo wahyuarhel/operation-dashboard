@@ -1,0 +1,39 @@
+@import '../../assets/css/main';
+
+#message-container {
+  width: 330px;
+  height: 120px;
+  border-width: 0px;
+  border-color: transparent;
+  justify-content: center;
+  display: flex;
+  border-width: 0px;
+  border-color: transparent;
+}
+.card-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.closed-icon {
+  top: 10px;
+  right: 10px;
+}
+.failed-icon {
+  margin-right: 20px;
+}
+.message-text {
+  text-align: center;
+}

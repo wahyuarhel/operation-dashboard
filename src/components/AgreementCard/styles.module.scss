@@ -1,0 +1,30 @@
+.agreement_card {
+  padding: 20px 30px;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 81px;
+  p {
+    font-family: 'Ubuntu';
+  }
+  .download_w8 {
+    color: #0500ff;
+    text-decoration: underline;
+    cursor: pointer;
+    display: initial;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 73px;
+  }
+  .signature_wrapper {
+    width: 150px;
+  }
+  .icon_download_wrapper {
+    width: 25px;
+    cursor: pointer;
+  }
+  img {
+    object-fit: contain;
+    width: 100%;
+  }
+}

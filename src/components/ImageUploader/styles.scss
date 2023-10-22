@@ -1,0 +1,27 @@
+@import '../../assets/css/main';
+
+#image-uploader-container {
+  .selected-file-wrapper {
+    cursor: pointer;
+    .edit-text {
+      text-align: center;
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+}
+.img-view-wrapper {
+  width: 500px;
+  @include screen-xl {
+    width: 800px;
+  }
+}
+.modal-on-image-preview {
+  background: transparent;
+  border: 0;
+}
+.modal-header-image-preview {
+  padding: 0;
+  border-bottom: 0;
+}

@@ -1,0 +1,74 @@
+@import '../../assets/css/main';
+
+#proof-remittance-container {
+  p,
+  h6 {
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .input-text {
+    min-height: 36px;
+    font-size: 10px;
+    padding-block: 8px;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+  }
+  .select-bank-box {
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .title {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .label {
+    font-size: 14px;
+    color: #9b9b9b;
+    line-height: 20px;
+  }
+  .value {
+    color: #000;
+    font-size: 14px;
+    line-height: 20px;
+    word-wrap: break-word;
+  }
+  .edit-text {
+    font-size: 14px;
+    text-decoration: underline;
+    margin-left: 10px;
+    cursor: pointer;
+    user-select: none;
+  }
+  textarea {
+    height: 83px;
+    font-size: 14px;
+  }
+  .additional-notes-input {
+    overflow-y: scroll;
+    min-height: 83px;
+    font-size: 14px;
+    &.loading {
+      &:hover {
+        cursor: progress;
+      }
+    }
+  }
+  .error-message {
+    font-size: 12px;
+    color: red;
+    margin-top: 10px;
+    &.text-right {
+      text-align: right;
+      margin-top: 2px;
+    }
+  }
+  .success-message {
+    font-size: 12px;
+    color: green;
+    margin-top: 10px;
+  }
+  .select-bank__placeholder {
+    color: black;
+  }
+}

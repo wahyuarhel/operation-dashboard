@@ -1,0 +1,24 @@
+#loading-overlay-container,
+.loading-class-container {
+  position: fixed;
+  background: transparent;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  height: 100vh;
+  width: 100vw;
+  .loading-wrapper {
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .text-white {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+  }
+}

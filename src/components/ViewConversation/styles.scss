@@ -1,0 +1,20 @@
+@import '../../assets/css/main';
+
+#conversation-container {
+  .modal-content {
+    background: transparent;
+    border: 0;
+    height: 70vh;
+    @include screen-lg {
+      height: 650px;
+    }
+    .modal-header {
+      border: 0;
+    }
+  }
+  .image-container {
+    z-index: 1000;
+    padding: 30px;
+    position: relative;
+  }
+}

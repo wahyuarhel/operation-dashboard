@@ -1,0 +1,43 @@
+@import '../../assets/css/main';
+
+#status-tab-container {
+  .tab-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 100px;
+    row-gap: 30px;
+    margin: 10px 0;
+    .tab-wrapper {
+      cursor: pointer;
+      position: relative;
+      width: fit-content;
+    }
+    .amount-container {
+      position: absolute;
+      background-color: red;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      top: -10px;
+      right: -20px;
+      padding: 5px;
+    }
+    .amount-text {
+      color: #fff;
+      font-size: 12px;
+      font-family: 'Ubuntu', sans-serif;
+    }
+    .status-text {
+      font-size: 24px;
+      font-weight: 400;
+      font-family: 'Ubuntu', sans-serif;
+      white-space: pre-line;
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
+  }
+}

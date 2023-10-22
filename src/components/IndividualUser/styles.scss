@@ -1,0 +1,65 @@
+@import '../../assets/css/main';
+
+#individual-user-content {
+  p,
+  h6 {
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .edit-button {
+    color: #000;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .edit-amount-input {
+    height: 25px;
+    font-size: 14px;
+  }
+  .label {
+    font-size: 14px;
+    color: #9b9b9b;
+    line-height: 20px;
+    word-wrap: break-word;
+  }
+  .value {
+    color: #000;
+    font-size: 14px;
+    line-height: 20px;
+    word-wrap: break-word;
+  }
+  .edit-text {
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .notes-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  textarea {
+    height: 83px;
+    font-size: 14px;
+  }
+  .additional-notes-input {
+    overflow-y: scroll;
+    min-height: 83px;
+    font-size: 14px;
+  }
+  .error-message {
+    font-size: 12px;
+    color: red;
+    margin-top: 10px;
+  }
+  .success-message {
+    font-size: 12px;
+    color: green;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+p {
+  font-family: Roboto;
+  margin: 0;
+}
+
+.font-main-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  &_bold {
+    font-family: Roboto;
+    font-weight: 700;
+  }
+}
+.font-small-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  &_bold {
+    font-family: Roboto;
+    font-weight: 700;
+  }
+}
+.font-h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+.font-button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+}
+.font-stock-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  &_bold {
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+  }
+}
+.font-hi {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+.font-mobile-menu {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 11px;
+  letter-spacing: 0.2px;
+}
+.font-form-infield {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+.font-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 44px;
+  &_bold {
+    font-size: 26px;
+    font-weight: 700;
+  }
+}
+
+.ubuntu-font {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: normal;
+  &_100 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+  }
+  &_200 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 200;
+  }
+  &_300 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+  }
+  &_400 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+  }
+  &_500 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+  }
+  &_600 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+  }
+  &_700 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+  }
+  &_800 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+  }
+  &_900 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+  }
+  &_bold {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+  }
+  &_bolder {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+  }
+  &_lighter {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: lighter;
+  }
+}
+.open-sans-font {
+  font-family: 'Open sans', sans-serif;
+  font-weight: normal;
+  &_100 {
+    font-family: 'Open sans', sans-serif;
+    font-weight: 100;
+  }
+  &_200 {
+    font-family: 'Open sans', sans-serif;
+    font-weight: 200;
+  }
+  &_300 {
+    font-family: 'Open sans', sans-serif;
+    font-weight: 300;
+  }
+  &_400 {
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+  }
+  &_500 {
+    font-family: 'Open sans', sans-serif;
+    font-weight: 500;
+  }
+  &_600 {
+    font-family: 'Open sans', sans-serif;
+    font-weight: 600;
+  }
+  &_700 {
+    font-family: 'Open sans', sans-serif;
+    font-weight: 700;
+  }
+  &_800 {
+    font-family: 'Open sans', sans-serif;
+    font-weight: 800;
+  }
+  &_900 {
+    font-family: 'Open sans', sans-serif;
+    font-weight: 900;
+  }
+  &_bold {
+    font-family: 'Open sans', sans-serif;
+    font-weight: bold;
+  }
+  &_bolder {
+    font-family: 'Open sans', sans-serif;
+    font-weight: bolder;
+  }
+  &_lighter {
+    font-family: 'Open sans', sans-serif;
+    font-weight: lighter;
+  }
+}

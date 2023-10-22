@@ -1,0 +1,29 @@
+.account_information {
+  border-radius: 10px;
+  background: white;
+  padding: 20px 25px;
+  margin-bottom: 36px;
+  p {
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .label {
+    font-weight: 400;
+    font-size: 10px;
+    color: #9b9b9b;
+  }
+  .label_icon_wrapper {
+    min-width: 70px;
+  }
+  .value_wrapper {
+    flex: 1;
+  }
+  .value {
+    font-size: 14px;
+    word-break: break-all;
+  }
+  .sub_value {
+    font-size: 10px;
+    font-weight: 500;
+    color: #9b9b9b;
+  }
+}

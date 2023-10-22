@@ -1,0 +1,78 @@
+@import '../../assets/css/main';
+#sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  width: 100px;
+  height: 100%;
+  background: black;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  .logo-wrapper {
+    width: 100%;
+    background: black;
+    position: sticky;
+    top: 0px;
+    .asklora-logo {
+      width: 100%;
+    }
+  }
+  .sidebar-wrap {
+    flex-grow: 1;
+    .menu-container {
+      padding: 5rem 0 1rem 0;
+      .top-ledger-menu-container {
+        // margin-bottom: 20px;
+        .ledger-menu-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 20px;
+          // margin-top: 80px;
+          .payments-label-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+          }
+        }
+      }
+    }
+    .menu-sidebar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding-block: 17px;
+      text-decoration: none;
+      &.sub-menu {
+        background: rgb(80, 80, 80);
+      }
+      > svg {
+        color: $color-white;
+      }
+      > p {
+        color: $color-white;
+      }
+      &.selected {
+        > svg {
+          color: $color-primary;
+        }
+        > p {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+
+  .icon-menu {
+    font-weight: bold;
+    margin-left: 5px;
+  }
+}
+.payments-label {
+  margin-top: 5px;
+  display: flex;
+  margin-left: 15px;
+}

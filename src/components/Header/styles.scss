@@ -1,0 +1,184 @@
+@import '../../assets/css/main';
+
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  padding: 10px 12px 10px 12px;
+  display: flex;
+  align-items: center;
+  background: $color-background;
+  h2 {
+    font-size: 26px;
+    color: #000;
+  }
+  .container-icon {
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+    margin-right: 10px;
+  }
+  .title-header {
+    color: #000;
+    flex-grow: 1;
+  }
+  .container-top-header {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-right: 10px;
+  }
+  .container-input-fields {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-inline: 10px;
+  }
+  .field-input {
+    margin-right: 10px;
+    width: 250px;
+    padding: 5px;
+    border-radius: 5px;
+    border-width: 1;
+  }
+  .container-button {
+    display: flex;
+    width: 200px;
+    height: 35px;
+    justify-content: space-around;
+  }
+  .button {
+    width: 80px;
+    border-radius: 5px;
+    border-width: 1;
+  }
+  .container-header {
+    max-width: 1728px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @include screen-lg {
+      flex-direction: row;
+      padding-block: 20px;
+    }
+    @include screen-xl {
+    }
+    .logo-search-wrap {
+      display: flex;
+      gap: 24px;
+      margin-bottom: 12px;
+      @include screen-sm {
+        gap: 0;
+      }
+      @include screen-lg {
+        gap: 48px;
+        flex: 1;
+        margin: 0;
+      }
+      @include screen-xl {
+        gap: 48px;
+        flex: 2;
+      }
+      .logo-wrapper {
+        @include screen-sm {
+          flex: 1;
+        }
+        @include screen-lg {
+          flex: 0;
+        }
+        @include screen-xl {
+          flex: 0;
+          margin-bottom: 0;
+        }
+        > img:nth-child(1) {
+          display: none;
+          @include screen-xl {
+            display: block;
+          }
+        }
+        > img:nth-child(2) {
+          @include screen-xl {
+            display: none;
+          }
+        }
+      }
+      .search-wrapper {
+        flex: 1;
+        @include screen-sm {
+          flex: 2;
+        }
+        @include screen-xl {
+          flex: 2;
+          margin-bottom: 0px;
+        }
+        .btn-search {
+          border: 1px solid #ced4da;
+        }
+      }
+    }
+    .email-btn-wrapper {
+      @include screen-sm {
+        display: flex;
+        width: 300px;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      @include screen-lg {
+        flex: 1;
+      }
+      @include screen-xl {
+        flex: 2;
+      }
+      .email-wrapper {
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: flex-end;
+        @include screen-sm {
+          justify-content: flex-start;
+          margin-bottom: 0;
+        }
+        @include screen-xl {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          margin-bottom: 0px;
+        }
+      }
+      .line-grey {
+        display: none;
+        @include screen-sm {
+          display: block;
+          border: 1px solid #f0eeee;
+          height: 29px;
+          margin-inline: 48px;
+        }
+      }
+      .btn-wrapper {
+        // flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        @include screen-xl {
+          flex: 0;
+        }
+        .btn-logout {
+          background: $color-down;
+          color: white;
+          padding-block: 7px;
+          padding-inline: 20px;
+        }
+        .btn-edit {
+          background: $color-up;
+          color: white;
+          padding-block: 7px;
+          padding-inline: 20px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import '../../assets/css/main';
+
+#por-container {
+  @include screen-xl {
+    box-shadow: 2px 0px 0px -1px #dddddd;
+  }
+  .content-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+  }
+  .preview-image-wrapper {
+    min-height: 500px;
+  }
+  .por-image {
+    width: 150px;
+    font-size: 12px;
+    font-family: 'Ubuntu', sans-serif;
+    @include screen-md {
+      width: 250px;
+    }
+    object-fit: contain;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+  }
+  .btn-upload {
+    width: 50px;
+    height: 50px;
+  }
+  .btn-upload-label {
+    text-align: center;
+  }
+  .remittance-status {
+    color: #c33335;
+    text-align: center;
+    font-weight: 500;
+  }
+}

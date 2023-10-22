@@ -1,0 +1,11 @@
+.tag_label {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 8px 22px;
+  cursor: default;
+  .label {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

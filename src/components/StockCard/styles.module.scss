@@ -1,0 +1,51 @@
+.stock_container {
+  padding: 20px 30px;
+  background: white;
+  border-radius: 10px;
+}
+
+.stock_card {
+  background-color: rgba(194, 209, 217, 0.35);
+  mix-blend-mode: normal;
+  border-radius: 6px;
+  width: 200px;
+  height: 174px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  .stock_card::before {
+    opacity: 0.35;
+    z-index: -3;
+  }
+  .stock_name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #424b5a;
+  }
+  .stock_company {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+    font-style: normal;
+  }
+  .stock_price {
+    font-size: 18px;
+  }
+  .stock_deviation {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .stock_date {
+    font-size: 8px;
+    font-weight: 400;
+    color: #424b5a;
+    line-height: 14px;
+    font-style: normal;
+  }
+  .icon_oval {
+    width: 10px;
+    height: 10px;
+    background-color: #02e200;
+    border-radius: 50%;
+  }
+}

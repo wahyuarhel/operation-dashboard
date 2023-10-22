@@ -1,0 +1,84 @@
+stages:
+  - build
+  - deploy
+
+variables:
+  TRIGGER_SERVICE: operation-dashboard
+
+build-dashboard-image:
+  # before_script:
+  #  - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD harbor.intra.asklora.ai
+  variables:
+    # DOCKER_HOST: tcp://docker:2375/
+    DOCKER_TLS_CERTDIR: ''
+    HARBOR_HELPER_IMAGE_URL: 'dev-harbor.intra.asklora.ai/library/dev-env:latest'
+    DOCKER_USERNAME: $HARBOR_USERNAME
+    DOCKER_PASSWORD: $HARBOR_PASSWORD
+    HARBOR_PUSH_URL: 'dev-harbor.intra.asklora.ai'
+    ENV_FILE_NAME: '.env.development'
+    TAG: 'dev'
+  rules:
+    - if: $CI_COMMIT_REF_NAME == "development"
+      variables:
+        HARBOR_PUSH_URL: 'dev-harbor.intra.asklora.ai'
+        ENV_FILE_NAME: '.env.development'
+        TAG: 'dev'
+    - if: $CI_COMMIT_REF_NAME == "master"
+      variables:
+        HARBOR_PUSH_URL: 'harbor.intra.asklora.ai'
+        ENV_FILE_NAME: '.env.production'
+        TAG: 'prod'
+    - if: $CI_COMMIT_REF_NAME == "staging"
+      variables:
+        HARBOR_PUSH_URL: 'stag-harbor.intra.asklora.ai'
+        ENV_FILE_NAME: '.env.staging'
+        TAG: 'stag'
+    - if: $CI_COMMIT_REF_NAME == "real-development"
+      variables:
+        HARBOR_PUSH_URL: 'real-dev-harbor.intra.asklora.ai'
+        ENV_FILE_NAME: '.env.development'
+        TAG: 'real-dev'
+    - if: $CI_COMMIT_REF_NAME == "real-staging"
+      variables:
+        HARBOR_PUSH_URL: 'real-stag-harbor.intra.asklora.ai'
+        ENV_FILE_NAME: '.env.staging'
+        TAG: 'real-stag'
+  stage: build
+  image: $HARBOR_HELPER_IMAGE_URL
+  services:
+    - name: docker:19.03.12-dind
+  environment: staging
+  tags:
+    - $TAG
+
+  script:
+    - echo "Krishna Testing is $HARBOR_PUSH_URL exists $ENV_FILE_NAME $TAG"
+    - echo "Job is running with tag $TAG"
+    - pip install whaleman
+    # - cp .env.development .env
+    - cp $ENV_FILE_NAME .env
+    # - whaleman build micro push -r dev-harbor.intra.asklora.ai
+    - whaleman build micro push -r $HARBOR_PUSH_URL
+
+#----------------------------------------------------------------------------------
+trigger-deploy-dev:
+  stage: deploy
+  rules:
+    - if: $CI_COMMIT_REF_NAME == "development" 
+  tags: 
+    - dev
+  before_script:
+    - apt update && apt upgrade -y
+    - apt install -y curl 
+  script:
+    - 'curl -X POST  --fail -F token=c3955c072b9c5c5580051f9f076e74 -F ref=master  -F "variables[TRIGGER_SERVICE]=$TRIGGER_SERVICE" -F "variables[UPSTREAM_BRANCH]=$CI_COMMIT_REF_NAME"  https://gitlab.intra.asklora.store/api/v4/projects/16/trigger/pipeline'
+
+deploy-stag-prod:
+  rules:
+    - if: $CI_COMMIT_REF_NAME == "staging" || $CI_COMMIT_REF_NAME == "master" || $CI_COMMIT_REF_NAME == "real-development" || $CI_COMMIT_REF_NAME == "real-staging"
+  variables:
+    UPSTREAM_BRANCH: $CI_COMMIT_REF_NAME
+    ENVIRONMENT: operation-dashboard
+  stage: deploy
+  trigger: DevOps/Infrastructure
+

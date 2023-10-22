@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: operation-dashboard-local
+    image: operation-dashboard
+    build:
+      context: .
+      dockerfile: Dockerfile.local
+    ports:
+      - 3000:3000
+    volumes:
+      - ./src:/app/src
+    environment:
+      - REACT_APP_ENV=LOCAL
+      - REACT_APP_BASE_URL=https://dashboard.asklora.store/api/v1
+      - REACT_APP_URL='operation-dashboard'

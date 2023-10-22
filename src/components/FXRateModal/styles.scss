@@ -1,0 +1,115 @@
+@import '../../assets/css/main';
+
+#message-container {
+  .modal-content {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border: 0;
+    .modal-header {
+      align-items: flex-start;
+      .modal-title {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+      }
+      .icon {
+        margin-right: 20px;
+      }
+    }
+    .modal-body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 150px;
+      max-height: 300px;
+      text-align: center;
+      padding-inline: 30px;
+      font-family: 'Ubuntu', sans-serif;
+      overflow-y: auto;
+      &_text-box {
+        display: block;
+        text-align: left;
+      }
+      &_scrollable-message {
+        height: 300px;
+        display: block;
+        text-align: left;
+        box-shadow: 0px 0px 1px rgba(9, 30, 66, 0.31),
+          0px 0px 1px rgba(9, 30, 66, 0.31);
+        font-size: 14px;
+        padding-inline: 16px;
+      }
+      textarea {
+        height: 159px;
+        margin-top: 20px;
+      }
+    }
+    .modal-footer {
+      > button {
+        font-size: 14px;
+        font-family: 'Ubuntu', sans-serif;
+      }
+    }
+    .edit-text {
+      font-size: 14px;
+      text-decoration: underline;
+      cursor: pointer;
+      margin-left: 20px;
+    }
+    .fx-rate-main-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .fx-rate-sub-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .fx-rate-large-title {
+      flex: 0.5;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .fx-rate-medium-title {
+      flex: 0.4;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+    .fx-rate-small-title {
+      flex: 0.2;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .edit-fx-input {
+      height: 35px;
+      font-size: 14px;
+      width: 80%;
+    }
+    .confirm-button {
+      height: 35px;
+      margin-left: 30px;
+    }
+    .error-text {
+      text-align: left;
+      font-size: 9px;
+      margin-top: 5px;
+      color: red;
+      word-wrap: break-word;
+    }
+    .input-rate-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin-left: 30px;
+    }
+    .success-message {
+      font-size: 12px;
+      color: green;
+      margin-top: 10px;
+      text-align: right;
+      margin-right: 20px;
+    }
+  }
+}

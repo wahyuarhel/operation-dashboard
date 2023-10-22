@@ -1,0 +1,68 @@
+@import '../../assets/css/main';
+
+#payment-status-container {
+  height: 131px;
+  border-color: transparent;
+  border-radius: 10px;
+  box-shadow: (1px 4px 4px 1px rgba(0, 0, 0, 0.25));
+  p {
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .card-body {
+    .card-title {
+      font-weight: 700;
+      font-size: 16px;
+      font-family: 'Ubuntu', sans-serif;
+    }
+    .status-container {
+      .status-progress-container {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        .status-progress-wrapper {
+          flex: 2;
+          display: flex;
+          gap: 10px;
+        }
+        .status-complete-wrapper {
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+  .action-text {
+    font-size: 10px;
+    font-weight: 400;
+    color: #848484;
+  }
+  .amount-text {
+    font-size: 14px;
+    font-weight: 400px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .status-text {
+    font-size: 8px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #848484;
+  }
+  .text {
+    color: black;
+    &-bold {
+      font-weight: 700;
+    }
+    &-green {
+      color: #008753;
+    }
+    &-yellow {
+      color: #f29100;
+    }
+    &-red {
+      color: #c33335;
+    }
+    &-purple {
+      color: #a500f2;
+    }
+  }
+}

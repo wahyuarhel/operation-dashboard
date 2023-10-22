@@ -1,0 +1,19 @@
+.user_detail_page {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #f6fbff;
+  position: relative;
+  .back_icon {
+    cursor: pointer;
+  }
+  .back_to_user {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .change_status_icon {
+    width: 150px;
+    height: 150px;
+  }
+}

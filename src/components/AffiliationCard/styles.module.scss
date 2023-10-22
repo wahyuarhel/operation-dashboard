@@ -1,0 +1,19 @@
+.affiliation_card {
+  padding: 20px 30px;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 63px;
+  .label {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: #9b9b9b;
+  }
+  .value {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}

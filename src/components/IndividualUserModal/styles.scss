@@ -1,0 +1,29 @@
+@import '../../assets/css/main';
+
+#modal-container {
+  justify-content: center;
+  font-family: 'Ubuntu', sans-serif;
+  .modal-content {
+    border-radius: 20px;
+  }
+  .modal-button {
+    width: 82px;
+    background-color: #0156d6;
+  }
+  .modal-header {
+    border-width: 0;
+    z-index: 1000;
+  }
+  .text-area {
+    border-width: 1;
+    border-color: #000;
+    height: 96px;
+    border-radius: 0px;
+    margin-top: 5px;
+  }
+  .modal-footer {
+    border-width: 0px;
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+}

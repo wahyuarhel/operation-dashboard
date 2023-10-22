@@ -1,0 +1,44 @@
+@import '../../assets/css/main';
+
+#alert-message {
+  position: relative;
+  .alert {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    z-index: 1100;
+    width: 580px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border: 0;
+    &_sm {
+      width: 327px;
+    }
+    &_lg {
+      right: 0;
+      width: 100%;
+    }
+    .message-wrapper {
+      color: black;
+      .title {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+        &_sm {
+          font-size: 14px;
+        }
+        &_other {
+          padding-bottom: 10px;
+        }
+      }
+      .message {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+        &_sm {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

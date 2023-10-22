@@ -1,0 +1,51 @@
+$color-primary: #3b98cc;
+$color-title: #000000;
+$color-text: #606060;
+$color-line: #e1e6e9;
+$color-light-text: #9c9a9a;
+$color-up: #30c296;
+$color-down: #e3544f;
+$color-popup-background: rgba(0, 0, 0, 0.6);
+$color-background: #f9f9f9;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-brand2: #00e2a1;
+$color-brand3: #ff17e9;
+
+.color-primary {
+  color: #3b98cc;
+}
+.color-title {
+  color: $color-title;
+}
+.color-text {
+  color: $color-text;
+}
+.color-line {
+  color: $color-line;
+}
+.color-light-text {
+  color: $color-light-text;
+}
+.color-up {
+  color: #30c296;
+}
+.color-down {
+  color: $color-down;
+}
+.color-popup-background {
+  color: $color-popup-background;
+}
+.color-background {
+  color: $color-background;
+}
+.color-white {
+  color: $color-white;
+}
+
+.color-brand2 {
+  color: #00e2a1;
+}
+.color-brand3 {
+  color: #ff17e9;
+}

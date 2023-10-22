@@ -1,0 +1,217 @@
+@import '../../assets/css/main';
+
+#user-table-container {
+  background: #f7fbff;
+  min-height: 95vh;
+  .table-wrapper {
+    min-height: 85vh;
+  }
+  .spinner-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+
+  .dot-text {
+    color: #006ef2;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .pagination-page {
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .modal-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .date-picker input {
+    padding: 5px;
+    border-radius: 5px;
+    border-width: 0.5px;
+  }
+
+  table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    position: unset;
+    tr {
+      th {
+        border-top: 0;
+        background-color: transparent;
+        color: black;
+        font-size: 14px;
+        padding: 10px 15px;
+        height: 60px;
+        text-align: left;
+        font-weight: 700;
+      }
+      td {
+        &:first-child {
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+        &:last-child {
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+        background: white;
+        border-bottom: 0;
+        margin-bottom: 10px;
+        height: 60px;
+        text-align: left;
+        font-size: 14px;
+        padding: 10px 15px;
+      }
+    }
+  }
+  .pagination {
+    padding: 18px 0.5rem;
+    display: flex;
+    justify-content: center;
+    border: 0;
+  }
+  .blue-status {
+    color: #006ef2;
+    font-weight: bold;
+  }
+  .red-status {
+    color: #c33335;
+    font-weight: bold;
+  }
+  .green-status {
+    color: #008753;
+    font-weight: bold;
+  }
+  .keyword-search-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .close-icon {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+  }
+  .date-picker input {
+    padding: 5px;
+    border-radius: 5px;
+    border-width: 0.5px;
+  }
+  .button-export {
+    width: 200px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    text-align: end;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .select-status {
+    border-width: 0;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .action-container {
+    display: flex;
+    flex-direction: row;
+    padding-inline: 10px;
+    justify-content: center;
+  }
+  .delete-button {
+    margin-left: 10px;
+    border-width: 0;
+  }
+
+  .account-balance-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .action-button-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .show-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .search-inner-container {
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .search-outer-container {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    z-index: 1000;
+  }
+
+  .indeterminate-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .search-container {
+    position: relative;
+  }
+  .search-icon {
+    position: relative;
+    top: 10px;
+    left: 30px;
+  }
+  .field-input {
+    width: '50%';
+    height: 38px;
+    padding-left: 35px;
+    font-size: 12px;
+    &::placeholder {
+      text-align: left;
+      color: #d6d6d6;
+    }
+  }
+  .react-select__control {
+    border-radius: 8px;
+  }
+  .react-select__placeholder {
+    text-align: center;
+    font-size: 12px;
+    padding-inline: 16px;
+  }
+  .react-select__indicator-separator {
+    margin-block: 0;
+  }
+  .react-select__single-value {
+    font-size: 12px;
+  }
+  .ubuntu-font_400 {
+    font-size: 14px;
+  }
+  .custom-cell-text {
+    justify-content: center;
+    cursor: pointer;
+    font-family: 'Ubuntu';
+  }
+}

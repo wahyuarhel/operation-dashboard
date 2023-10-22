@@ -1,0 +1,15 @@
+#button-upload-file {
+  cursor: pointer;
+  // border: 1px solid grey;
+  border-radius: 5px;
+  padding: 5px;
+  padding-inline-start: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #d6d8d9;
+  &:hover {
+    background: grey;
+    color: white;
+  }
+}

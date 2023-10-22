@@ -1,0 +1,75 @@
+.overview_card {
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 50px;
+  p {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  button {
+    font-weight: 500;
+    font-size: 12px;
+    padding: 8px 22px;
+    border-color: transparent;
+    &:hover {
+      border-color: transparent;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .image_wrapper {
+    width: 121px;
+    height: 121px;
+  }
+  .change_status {
+    background: #2e4580;
+    color: white;
+    &:hover {
+      background: #143a9a;
+    }
+  }
+  .reject_user {
+    display: inline;
+    margin-top: 20px;
+    background: #c43335;
+    &:hover {
+      background: #dc2a2d;
+    }
+  }
+  .approve_user {
+    display: inline;
+    margin-top: 20px;
+    background: #5625bf;
+    &:hover {
+      background: #4f07ea;
+    }
+  }
+  .final_approve_user {
+    display: inline;
+    margin-top: 20px;
+    background: #008753;
+    &:hover {
+      background: #008753;
+    }
+  }
+  .suspended_user {
+    background: #f3b9b9;
+    color: #c43335;
+    &:hover {
+      background: #dd8383;
+    }
+  }
+  .user_name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .label {
+    color: #9b9b9b;
+  }
+  .fill_text {
+    color: black;
+  }
+}

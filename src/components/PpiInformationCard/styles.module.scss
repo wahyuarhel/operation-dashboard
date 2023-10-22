@@ -1,0 +1,53 @@
+.ppi_information_card {
+  padding: 20px 30px;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  .detail_toggle {
+    cursor: pointer;
+  }
+  .down_icon {
+    -webkit-animation: down_icon 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: down_icon 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  @keyframes down_icon {
+    0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+  }
+  .up_icon {
+    -webkit-animation: up_icon 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: up_icon 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  @keyframes up_icon {
+    0% {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .subtitle {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    color: #424b5a;
+  }
+  .label {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #424b5a;
+  }
+}
